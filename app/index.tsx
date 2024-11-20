@@ -61,7 +61,7 @@ export default function App() {
     const valorTotal:number = carrinho.getValorTotal();
     const todososProdutos:Produto[] = carrinho.getTodosOsProdutos();
     router.push({
-      pathname:"/telaCarrinho",
+      pathname:"/telaCarrinho/telaCarrinho",
       params:{
         valor:valorTotal.toString(),
         products:JSON.stringify(todososProdutos)
@@ -91,7 +91,7 @@ export default function App() {
           </TouchableOpacity>
       ))}
     </Scrollable>
-    //<Button title="Carrinho" onPress={handleCheckout} ></Button>
+    <Button title="Carrinho" onPress={handleCheckout} ></Button>
    </FullScreen>
   );
 }

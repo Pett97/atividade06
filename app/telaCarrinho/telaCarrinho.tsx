@@ -42,7 +42,6 @@ function TelaCarrinho() {
   );
 }
 
-// Estilos
 const styles = StyleSheet.create({
   totalContainer: {
     marginTop: 20,
